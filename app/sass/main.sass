@@ -1,0 +1,132 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+.home 
+	position: relative
+	
+header
+	position: absolute
+	top: 0
+	right: 0
+	left: 0
+
+// For navigation bar
+
+.topnav
+	font-family: $default-font
+	font-weight: 500
+
+.navbar-brand
+	width: 1440px
+	height: 80px
+	
+.navbar-brand img
+	width: 212px
+	height: 48px
+	margin-left: 153px
+	margin-top: 16px
+	margin-bottom: 16px
+
+.nav-home
+	margin-left: 35px
+	color: #000000
+
+.nav-who
+	margin-left: 32px
+	color: #000000
+
+.nav-about
+	margin-left: 32px
+	color: #000000
+.nav-work
+	margin-left: 32px
+	color: #000000
+
+// For background
+.top-part 
+	width: 1440px
+	height: 880px
+	background-repeat: no-repeat
+	background-position: left center,top right
+	background-size: 440px 770px, 440px 400px
+	object-fit: contain 
+
+// Top-Head-Part
+.header-capcha
+	padding-top: 221px
+	text-align: center
+	font-family: $default-font
+	text-transform: uppercase
+
+.header-capcha h3 
+	font-weight: 300
+	font-size: 18px
+
+
+.header-text
+	text-align: center
+	font-family: $default-font
+	text-transform: uppercase
+	color: #3a88f4
+
+.header-text h1 
+	font-weight: 600
+	font-size: 64px
+
+.main-text
+	width: 100%
+	max-width: 670px
+	text-align: center
+	font-family: $default-font
+	text-transform: uppercase
+	color: #3e3e3e
+	margin-left: 380px
+	
+.main-text p
+	font-size: 16px
+	line-height: 1.5
+
+.contact-button
+	text-align: center
+
+	
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+
+@import "media" // Always at the end
