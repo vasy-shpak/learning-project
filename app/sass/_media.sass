@@ -15,6 +15,62 @@
 // ≥576px
 +media-breakpoint-down(xs)
 
+    .home
+        width: 100%
+        min-width: 300px
+        margin: 0 auto
+   
+    header
+        display: none
+
+    .top-part
+        background-size: 30%
+        .header-capcha
+            padding-top: 100px
+            h3
+                font-size: 16px
+        .header-text h1 
+            font-size: 32px
+            line-height: 32px
+        .main-text
+            padding-top: 15px
+            p
+                font-size: 12px
+
+    .wrapper-features
+        display: flex
+        flex-wrap: wrap
+        .item
+            display: none
+            width: 100%
+            min-width: 300px
+        .item:first-child
+                display: block
+
+    .wrapper
+        margin-top: -100px
+    
+    .features-expo
+        .feature-img
+            display: none
+        .feature-text
+            width: 100%
+            text-align: left
+            padding: 10px
+
+    .wrapper-news-links
+        .link-item
+            display: none
+        .link-item:first-child
+            display: block
+            width: 100%
+            max-width: 100%
+            margin: 10px
+
+    .networks-container
+        flex-wrap: wrap
+
+
 
 /*==========  Mobile First  ==========*/
 
