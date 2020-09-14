@@ -19,9 +19,46 @@
         width: 100%
         min-width: 300px
         margin: 0 auto
-   
+        padding-left: 5px
+        padding-right: 5px
+
+    .container-navigation
+        display: flex
+        flex-direction: row-reverse
+        justify-content: space-between
+
     header
+        background-color: #fff 
+
+    .hamburger
+        position: relative
+        display: block
+        z-index: 6
+    
+    .navbar-brand
+        padding-left: 10px
+        position: relative
+        z-index: 6
+        
+   
+    .nav-content
         display: none
+        &.is-active
+            display: block
+            position: fixed
+            width: 100%
+            background-color: #fff
+            text-align: center
+            z-index: 5
+            a
+                display: block
+                width: 215px
+                margin: 15px auto
+                border-radius: 5px
+                color: #000 
+            a:hover 
+                color: $accent
+
 
     .top-part
         background-size: 30%
@@ -37,18 +74,35 @@
             p
                 font-size: 12px
 
+    .owl-dots
+        width: 100%
+        text-align: center
+        .owl-dot
+            outline: none
+        .owl-dot span
+            display: block
+            width: 20px
+            height: 20px
+            color: #000
+            background-color: rgba($accent,.5)
+            border-radius: 50%
+            margin: 15px
+        .owl-dot
+            &.active 
+                span
+                    background-color: $accent
+
+        
+        
+
     .wrapper-features
         display: flex
         flex-wrap: wrap
         .item
-            display: none
-            width: 100%
-            min-width: 300px
-        .item:first-child
-                display: block
+            display: block
+            width: 80%
+            margin: 0 auto
 
-    .wrapper
-        margin-top: -100px
     
     .features-expo
         .feature-img
@@ -80,6 +134,9 @@
         .form-column
             width: 100%
             padding: 10px
+
+    .owl-nav
+        display: none
 
 
 /*==========  Mobile First  ==========*/
