@@ -440,32 +440,50 @@ b, strong
 
 .nav-contact-button
 	display: inline-block
-	margin-left: 250px	
-
+	margin-left: 250px
+	
 
 .nav-contact-button button
 	border-style: none
+	outline-style: none
 	width: 190px
 	height: 40px 
 	line-height: 40px
 	background-color: #3a88f4
-	color: 
 	transition-duration: 0.2s
+	
+
+.nav-contact-button button:hover
 	box-shadow: 3px 3px 18px 3px rgba(58, 136, 244, 0.45)
+
 
 .nav-contact-button button a 
 	font-family: $default-font
 	font-weight: 600
 	color: #fff
 
+.nav-contact-button button a:hover 
+	text-decoration: none 
+
+
+//
+//
 //Aout us Page content
+// 
+// 
+		
+	
 
 .about-us-wrap
 	width: 100%
 	margin: 0 auto
 
 .hero-picture img
+	width: 100%
 	margin-top: 100px
+
+.hero-picture-2 img
+	width: 100%
 
 .page-nav
 	margin-top: 40px
@@ -617,19 +635,95 @@ b, strong
 		color: $main-text
 
 
+
+// 
+// 
+// Team Member page style 
+//
+//
+
+.wrap-team
+	background-repeat: no-repeat
+	background-position: -45px 350px
+	padding-top: 120px
+
+.wrap-team-member
+	width: 100%
+	max-width: 1140px
+	margin: 0 auto
+	display: flex
+
+.tm-info
+	margin-left: 40px
+	h2
+		color: $accent
+		font-size: 31px
+		font-weight: 500
+	h3
+		color: $text
+		font-size: 18px
+		font-weight: 500
+		margin-top: -10px
+		margin-bottom: 15px
+	p 
+		line-height: 1.5
+
+//
+//
+// Our Work Archieve
+//
+//
+
+.wrap-work
+	background-repeat: no-repeat
+	background-position: -45px 350px
+	padding-top: 100px
+
+.wrap-archieve
+	width: 100%
+	max-width: 1140px
+	margin: 0 auto
+
+.hero-archieve
+	width: 100%
+	display: flex
+	.hero-archieve-pic
+		width: 50%
+		margin-right: 30px
+	.hero-archieve-info
+		width: 50%
+		span 
+			color: rgba($text, 0.4)
+			font-size: 14px
+		a 
+			color: $accent
+			font-size: 32px
+			font-weight: 500 
+		.archieve-button
+			margin-top: 50px
+			button:hover
+				box-shadow: 3px 3px 18px 3px rgba(58, 136, 244, 0.45)
+			button
+				border-style: none
+				outline-style: none
+				width: 190px
+				height: 40px 
+				line-height: 40px
+				background-color: #3a88f4
+				transition-duration: 0.2s
+				a 
+					font-family: $default-font
+					font-size: 18px
+					text-transform: uppercase
+					font-weight: 600
+					color: #fff
+				a:hover
+					text-decoration: none 
+
+
+
 .owl-nav
 	display: none
-
-
-
-	
-
-
-
-
-
-
-
 
 
 
