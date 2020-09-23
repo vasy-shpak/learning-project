@@ -653,7 +653,13 @@ b, strong
 	margin: 0 auto
 	display: flex
 
+.tm-picture
+	width: 35%
+	img 
+		width: 100%
+
 .tm-info
+	width: 65%
 	margin-left: 40px
 	h2
 		color: $accent
@@ -676,8 +682,9 @@ b, strong
 
 .wrap-work
 	background-repeat: no-repeat
-	background-position: -45px 350px
+	background-position: -180px 440px
 	padding-top: 100px
+
 
 .wrap-archieve
 	width: 100%
@@ -690,6 +697,9 @@ b, strong
 	.hero-archieve-pic
 		width: 50%
 		margin-right: 30px
+		img 
+			width: 100%
+			box-shadow: 1px 1px 20px -6px rgba(0, 0, 0, 0.11)
 	.hero-archieve-info
 		width: 50%
 		span 
@@ -720,7 +730,68 @@ b, strong
 				a:hover
 					text-decoration: none 
 
+.archieve-tile
+	display: flex
+	flex-wrap: wrap
+	justify-content: flex-start
+	width: 100%
+	margin-top: 70px
+	padding-bottom: 100px
+	a:hover 
+		text-decoration: none
+	.archieve-item
+		width: 33%
+		padding-right: 20px
+		img 
+			width: 100%
+		img:hover
+			box-shadow: 1px 1px 20px -6px rgba(0, 0, 0, 0.11)
+		h2 
+			color: $text
+			line-height: 1,3
+			font-size: 18px
+			margin-bottom: 0
+		h4 
+			color: rgba($text, 0.4)
+			font-size: 14px
+			font-weight: 300
+		h4:hover 
+			text-decoration: none
 
+// 
+//
+// Our work single post
+//
+//
+
+.wrap-post
+	background-repeat: no-repeat
+	background-position: -15% 200%, 105% -40%
+	padding-top: 100px
+	
+.post-body
+	width: 100%
+	max-width: 900px
+	margin: 0 auto
+	padding: 50px 0
+	text-align: center
+	img 
+		width: 100%
+	h4 
+		color: rgba($text, 0.4)
+		font-size: 14px
+		font-weight: 300
+	h2
+		font-size: 32px
+		font-weight: 500
+		margin-bottom: 20px
+	.post-text
+		width: 100%
+		max-width: 650px
+		margin: 0 auto
+		p 
+			margin-top: 40px
+			text-align: left
 
 .owl-nav
 	display: none

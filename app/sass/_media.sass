@@ -141,10 +141,12 @@
             padding: 10px
 
     .wrapper-news-links
+        margin-left: 0
         .link-item
             display: none
         .link-item:first-child
             display: block
+            background-repeat: no-repeat
             width: 100%
             max-width: 100%
             margin: 10px
@@ -191,9 +193,11 @@
         .wrap-team-member
             flex-wrap: wrap
             .tm-picture
+                width: 100%
                 img 
                     width: 100%
             .tm-info
+                width: 100%
                 margin-top: 20px
                 margin-left: 15px
                 margin-right: 15px
@@ -201,6 +205,33 @@
                     text-align: center
                 h3 
                     text-align: center
+
+    // Our Work Page
+    
+    .wrap-work
+        background-size: 0 0
+
+    .hero-archieve
+        flex-wrap: wrap
+        .hero-archieve-pic
+            width: 100%
+            margin: 0
+        .hero-archieve-info
+            width: 100%
+            text-align: left
+            margin-top: 15px
+
+    .archieve-tile
+        padding-bottom: 30px
+        .archieve-item
+            width: 100%
+            padding: 0  
+            margin-bottom: 25px
+
+    .wrap-post
+        background-size: 0 0, 0 0
+        padding-top: 50px
+        
 
 
 
